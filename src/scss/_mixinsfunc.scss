@@ -1,0 +1,15 @@
+@mixin flex($df: flex,$jc: center,$al: center,$fw: wrap){
+    display: $df;
+    justify-content: $jc;
+    align-items: $al;
+    flex-wrap: $fw;
+}
+
+
+@mixin systemBox ($p:10px,$h:50px,$br:5px,$fz:15px){
+    padding: $p;
+    height: $h;
+    border-radius: $br;
+    font-size: $fz;
+}
+

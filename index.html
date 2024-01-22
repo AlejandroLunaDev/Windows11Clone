@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./src/assets/svgs/system/logoAle.svg" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Windows11-Clone </title>
+  </head>
+  <body class="index-body">
+    <header>
+      <nav class="nav">
+        <section class="inicio">
+          <div class="inicio__icon"id="windowsIcon">
+            <img src="./src/assets/svgs/inicio/inicio.svg" alt="inicio">
+          </div>
+        </section>
+        <section class="system">
+          <section class="nav__system-icons" >
+            <img src="./src/assets/svgs/system/uparrow.svg" alt="arrow">
+          </section>
+          <section class="nav__system-leng">
+            <p>ESP</p>
+            <p>ES</p>
+          </section>
+          <section class="nav__system-status" id="toggleOffCanvas">
+            <article class="nav__system-status-wifi">
+              <div class="tooltip-box wifi-conection">
+                <span>portfolio-ale-luna</span><br />
+                <small>Acceso a Internet</small>
+              </div>
+              <img id="wifi" src="./src/assets/svgs/system/wifi.svg" alt="wifi" />
+            </article>
+            <article class="nav__system-status-sound">
+              <img src="./src/assets/svgs/system/sound.svg" alt="sound" />
+              <div class="tooltip-box sound">
+                <small>Speakers (Realteck(R) Audio): 100%</small>
+              </div>
+            </article>
+            <article class="nav__system-status-battery">
+              <img src="./src/assets/svgs/system/battery.svg" alt="batery" />
+              <div class="tooltip-box battery">
+                <small>Estado de la batería: totalmente cargado 100%</small>
+              </div>
+            </article>
+          </section>
+          <section class="nav__system-date">
+            <article class="date">
+              <div class="tooltip-box" id="tooltipdate"></div>
+              <div class="date__clock" id="clock">
+                <div id="hour"></div>
+                <div>:</div>
+                <div id="minutes"></div>
+              </div>
+              <div class="date__fecha" id="fecha" data-my-title=""></div>
+            </article>
+            <article class="nav__alert">
+              <img src="./src/assets/svgs/system/alert.svg" alt="alert" />
+              <div class="tooltip-box alert">
+                <small>nueva oportunidad laboral</small>
+              </div>
+            </article>
+          </section>
+        </section>
+  
+      </nav>
+
+      <!-- Off-Canvas Inicio-->
+     <section id="offCanvasInicio" class="offCanvasInicio">
+       <div id="offCanvasInicio-content" class="offCanvasInicio-content">
+        <div class="search-container">
+          <input type="text" placeholder="Buscar aplicaciones, configuraciones y documentos" id="inputSearch">
+          <img src="./src/assets/svgs/inicio/lupa.svg" alt="lupa">
+        </div>
+        <article class="icons" id="icons"></article>
+        </div>
+        <div class="status-footer">
+          <h2>offcanvasFooter</h2>
+        </div>
+    </section>
+
+
+
+      <!-- Off-Canvas System Status-->
+      <div id="offCanvasStatus" class="offCanvasStatus">
+        <div id="statusPopover" class="offCanvasStatus-content">
+          <div class="buttons">
+            <div class="button">
+              <button class="card wifi-active" id="wifi-card">
+                <img  src="./src/assets/svgs/system/wifi.svg" alt="wifi" />
+              </button>
+              <small>wifi</small>
+            </div>
+            <div class="button">
+              <button class="card">
+                <img src="./src/assets/svgs/system/bluetooth.svg" alt="bluetooth" />
+              </button>
+              <small>bluetooth</small>
+            </div>
+            <div class="button">
+              <button class="card">
+                <img src="./src/assets/svgs/system/modoavion.svg" alt="modoavion">
+              </button>
+              <small>modo avión</small>
+            </div>
+            <div class="button">
+              <button class="card">
+                <img src="./src/assets/svgs/system/batteryempty.svg" alt="batteryempty">
+              </button>
+              <small>ahorro de batería</small>
+            </div>
+            <div class="button">
+              <button class="card" id="nightmodeToggle">
+               <img src="./src/assets/svgs/system/nightmode.svg" alt="nightmode">
+              </button>
+              <small>luz nocturna</small>
+            </div>
+            <div class="button">
+              <button class="card">
+                <img src="./src/assets/svgs/system/accesibility.svg" alt="accesibility">
+              </button>
+              <small>accesibilidad</small>
+            </div>
+          </div>
+          <div class="range">
+            <article>
+              <div class="brightness">
+              <img src="./src/assets/svgs/system/brightness.svg" alt="brightness">                
+              <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="100"
+                  name="brightnessControl"
+                  class="brightness1"
+                  id="brightnessControl"
+                />
+              </div>
+            </article>
+            <article>
+              <div class="sound">
+                <img src="./src/assets/svgs/system/sound.svg" alt="sound">
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="100"
+                  name="soundControl"
+                  class="sound__input"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="status-footer">
+          <div class="status-battery">
+     <img src="./src/assets/svgs/system/batteryempty.svg" alt="batteryempty">
+            <small>100%</small>
+          </div>
+          <div class="config">
+            <img src="./src/assets/svgs/system/settings.svg" alt="settings">          
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <img class="bg" src="./src/assets/img/fondo.jpg" alt="bg" />
+      <div id="terminal" createElement()></div>
+    </main>
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+// TIPOGRAFY
+@font-face {
+    font-family: Segoe UI Variable;
+    src: url(/_next/static/media/SegoeUIVariable.c39562e47372b469a8fda5bd443bcc9c.woff2) format("woff2"),url(/_next/static/media/SegoeUIVariable.d73486dd9ea91d60bd16f9839ffb76bb.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+
+
+
+// COLORS 
+$color-primary:#000;
+$color-secondary:#6E419A;
+$color-success :#4DB559;
+$color-danger :#F54646;
+
+$break-pontis: (
+    "xs": 595px,
+    "sm":760px,
+    "md":1200px, 
+);

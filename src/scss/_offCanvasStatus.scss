@@ -1,0 +1,95 @@
+.offCanvasStatus {
+  position: absolute;
+  bottom: -500px;
+  margin-bottom: 75px;
+  right: 0;
+  overflow: hidden;
+  width: 360px;
+  height: calc(430px - 20px);
+  background-color: rgba(28, 33, 39, 0.8);
+  transition: all 0.5s ease-in-out 0s;
+  transform: translateX(-1rem);
+  border-radius: 10px;
+  backdrop-filter: blur(20.5px);
+  box-shadow: -2px 2px 15px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid #cccccc36;
+  z-index: -1;
+
+  & .offCanvasStatus-content {
+    width: 100%;
+    height: 90%;
+    background: rgba(28, 33, 39, 0.63);
+    & .buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 25px;
+      padding: 15px;
+      & .button {
+        @include flex;
+        text-transform: capitalize;
+        & small {
+          margin: 7px;
+          font-size: 10px;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+        }
+        & button {
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.221);
+          }
+        }
+      }
+ 
+      & .card {
+        width: 100%;
+        height: 80%;
+        padding: 0.75rem;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.055);
+        cursor: pointer;
+        border: 0px;
+        transition: all 0.2s ease-in-out 0s;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 1px;
+      }
+      .wifi-active {
+        background-color: hsla(311, 89%, 63%, 0.888);
+        &:hover {
+          background-color: hsla(311, 81%, 75%, 0.986)!important;
+        }
+  
+      }
+    }
+    & .range {
+      @include flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 30px;
+      & article {
+        @include flex;
+
+        width: 100%;
+        & div {
+          width: 80%;
+        }
+        & input {
+          margin-left: 15px;
+          width: 80%;
+        }
+      }
+    }
+  }
+  & .status-footer {
+    @include flex($jc: space-between);
+    padding: 5px 15px;
+  }
+  & .status-battery {
+    @include flex;
+    cursor: pointer;
+  }
+  & .config {
+    margin-top: 4px;
+    cursor: pointer;
+  }
+}

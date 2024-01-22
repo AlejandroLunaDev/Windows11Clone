@@ -1,0 +1,16 @@
+.tooltip-box {
+    background-color:rgba($color-primary,0.2);
+    line-height: 20px;
+    z-index: 500;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 15rem;
+    position: absolute;
+    right: 5px;
+    bottom: 75px;
+    opacity: 0;
+    pointer-events: none;
+}
+

@@ -1,0 +1,111 @@
+header {
+    margin-top: auto;
+    z-index: 1;
+
+    & .nav {
+        @include flex($jc:space-between);
+        min-height: 2rem;
+        background: rgba(3, 21, 41, 0.35);
+        padding: 5px 5px;
+        width: 100%;
+        backdrop-filter: blur(20.5px);
+        border-top: 1px solid grey;
+        & .inicio {
+            margin-left: 430px;
+            &__icon{
+                @include systemBox;
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    box-shadow:1px 2px 1px rgba(255, 255, 255, 0.1) inset ;
+                }
+            }
+        }
+        & small {
+            font-size: 14px;
+        }
+        &__system-status {
+            @include flex;
+            @include systemBox;
+            gap: 0.8rem;    
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                box-shadow:1px 2px 1px rgba(255, 255, 255, 0.1) inset ;
+            }
+
+            &-wifi {
+                & span {
+                    text-transform: uppercase;
+                }    
+                &:hover .wifi-conection {
+                    opacity: 1;
+                    animation: fadeIn 0.6s ease-in;
+                }
+            }
+            &-battery {
+                &:hover .battery {
+                    opacity: 1;
+                    animation: fadeIn 0.6s ease-in;
+                }
+            }
+            &-sound {
+                &:hover .sound {
+                    opacity: 1;
+                    animation: fadeIn 0.6s ease-in;
+                }
+            }
+        }
+        &__system-date {
+            @include flex;
+            @include systemBox;
+            gap: 0.8rem;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                box-shadow:1px 2px 1px rgba(255, 255, 255, 0.1) inset ;
+            }
+            & .date {
+                
+                &:hover .tooltip-box {
+                    opacity: 1;
+                    animation: fadeIn 0.6s ease-in;
+                }
+                &__clock {
+                    @include flex($jc:end);
+                    text-align: end;
+                    font-size: 15px;
+                }
+        
+                &__fecha {
+                    font-size: 14px;
+                }
+            }
+            
+        } 
+        &__alert {
+            text-transform: capitalize;
+            &:hover .alert {
+                opacity: 1;
+                animation: fadeIn 0.6s ease-in;
+            }
+        }
+        &__system-leng{
+            @include systemBox;
+            text-align: center;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                box-shadow:1px 2px 1px rgba(255, 255, 255, 0.1) inset ;
+            }
+        }
+        &__system-icons{
+            @include systemBox;
+            @include flex;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                box-shadow:1px 2px 1px rgba(255, 255, 255, 0.1) inset ;
+            }
+        }
+        }
+}
+
+.system{
+    @include flex;
+}
