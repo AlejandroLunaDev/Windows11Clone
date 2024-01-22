@@ -7,7 +7,7 @@ class Icono {
 
 const iconoGitHub = new Icono(
   "GitHub",
-  "/src/assets/svgs/inicio/gitHub.svg"
+  "/src/assets/svgs/inicio/github.svg"
 );
 const iconoFigma = new Icono(
   "Figma",
@@ -15,19 +15,19 @@ const iconoFigma = new Icono(
 );
 const iconoGitBash = new Icono(
   "Terminal",
-  "/src/assets/svgs/inicio/gitBash.svg"
+  "/src/assets/svgs/inicio/gitbash.svg"
 );
 const iconoChome = new Icono(
   "Chrome",
-  "/src/assets/svgs/inicio/gChrome.svg"
+  "/src/assets/svgs/inicio/chrome.svg"
 );
 const iconoExel = new Icono(
   "Exel",
-  "/src/assets/svgs/inicio/mExel.svg"
+  "/src/assets/svgs/inicio/exel.svg"
 );
 const iconoWord = new Icono(
-  "Figma",
-  "/src/assets/svgs/inicio/mWord.svg"
+  "Word",
+  "/src/assets/svgs/inicio/word.svg"
 );
 const iconoVSCode = new Icono(
   "VSCode",
@@ -39,7 +39,7 @@ const iconoDiscord = new Icono(
 );
 const iconolinkedIn = new Icono(
   "LinkedIn",
-  "/src/assets/svgs/inicio/likeding.svg"
+  "/src/assets/svgs/inicio/linkedin.svg"
 );
 const iconoSteam = new Icono(
   "Steam",
@@ -47,7 +47,7 @@ const iconoSteam = new Icono(
 );
 const iconoWhatsAap = new Icono(
   "WhatsApp",
-  "/src/assets/svgs/inicio/whatssap.svg"
+  "/src/assets/svgs/inicio/whatsaap.svg"
 );
 const iconoEdge = new Icono(
   "Edge",
