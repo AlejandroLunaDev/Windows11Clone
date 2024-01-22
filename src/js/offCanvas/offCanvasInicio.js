@@ -51,7 +51,7 @@ const iconoWhatsAap = new Icono(
 );
 const iconoEdge = new Icono(
   "Edge",
-  "/src/assets/svgs/inicio/Edge.svg"
+  "/src/assets/svgs/inicio/edge.svg"
 );
 
 
@@ -60,15 +60,15 @@ const iconosInicio = () => {
   const iconsContainer = document.getElementById("icons");
 
   arrayIconos.forEach((icono) => {
-    const nuevoDiv = document.createElement("div");
+    const nuevoA = document.createElement("a");
     const nuevaImagen = document.createElement("img");
     const nuevoP = document.createElement("p");
     nuevaImagen.src = icono.ruta;
     nuevoP.textContent = icono.nombre;
 
-    nuevoDiv.appendChild(nuevaImagen);
-    nuevoDiv.appendChild(nuevoP);
-    iconsContainer.appendChild(nuevoDiv);
+    nuevoA.appendChild(nuevaImagen);
+    nuevoA.appendChild(nuevoP);
+    iconsContainer.appendChild(nuevoA);
   });
 };
 
