@@ -39,6 +39,7 @@ const offCanvasStatus = () => {
     // Night Mode
     nightModeBtn.addEventListener('click', ()=>{
         document.body.classList.toggle('night-mode')
+        const brightnessValue = brightnessControl.value;
         document.body.style.filter = document.body.classList.contains('night-mode') ? '' : 'brightness(' + brightnessValue + '%)';
         nightModeBtn.style.backgroundColor = document.body.classList.contains('night-mode')
         ? 'hsla(311, 89%, 63%, 0.888)'   
