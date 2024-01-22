@@ -7,3 +7,25 @@ El enlace a la pagina esta en la parte de About
 
 ## Para la escucha de Sass 
 `sass:all: npm run sass:expanded & npm run sass:compressed`
+
+# Para el tutor
+
+## Objeto Date()
+
+<p align="center">
+  <img src="./src/assets/img/readme/imagenclock.png" alt="imagen clock">
+</p>
+
+Utilización del objeto Date con sus métodos para obtener el dia hora y año.
+
+## Método forEach()
+
+<p align="center">
+  <img src="./src/assets/img/readme/imagenoffcanvasinicio.png" alt="imagen inicio">
+</p>
+
+Utilizacion del método foreach para recorrer cada elemento del array compueto por objetos.
+
+### Conclución
+
+De esta forma estaria cumpliendose lo pedido para la segunda pre-entrega.
