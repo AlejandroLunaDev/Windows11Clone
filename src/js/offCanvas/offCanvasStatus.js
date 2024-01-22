@@ -27,7 +27,7 @@ const offCanvasStatus = () => {
     
     const upadateWifiImage = ()=> {
         const wifiIsActive = wifiBtn.classList.contains('wifi-active');
-        const wifiImageSource = wifiIsActive ?'../../public/wifi.svg' : '../../public/wifidisconnect.svg';
+        const wifiImageSource = wifiIsActive ?'./src/assets/svgs/system/wifi.svg' : './src/assets/svgs/system/wifidisconnect.svg';
         wifiImage.src = wifiImageSource;
     }
     
