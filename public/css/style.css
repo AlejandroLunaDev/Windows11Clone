@@ -304,13 +304,14 @@ header .nav__system-icons:hover {
   transform: translateX(-50%);
   width: 80%;
   max-width: 600px;
-  height: 440px;
+  height: 540px;
 }
 .offCanvasInicio .offCanvasInicio-content {
   width: 100%;
-  height: 90%;
+  height: 85%;
   background: rgba(28, 33, 39, 0.63);
   padding: 25px;
+  font-size: 14px;
 }
 .offCanvasInicio .offCanvasInicio-content input {
   padding: 15px;
@@ -372,14 +373,14 @@ header .nav__system-icons:hover {
 .offCanvasInicio .offCanvasInicio-content .icons p {
   font-size: 12px;
 }
-.offCanvasInicio .offCanvasInicio-content .sub-title {
+.offCanvasInicio .offCanvasInicio-content .sub-title, .offCanvasInicio .offCanvasInicio-content .recomendaciones {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   margin: 30px 25px 0 25px;
 }
-.offCanvasInicio .offCanvasInicio-content .sub-title a {
+.offCanvasInicio .offCanvasInicio-content .sub-title a, .offCanvasInicio .offCanvasInicio-content .recomendaciones a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,12 +391,42 @@ header .nav__system-icons:hover {
   padding: 5px;
   border-radius: 5px;
 }
-.offCanvasInicio .offCanvasInicio-content .sub-title a img {
+.offCanvasInicio .offCanvasInicio-content .sub-title a img, .offCanvasInicio .offCanvasInicio-content .recomendaciones a img {
   rotate: 90deg;
   height: 20px;
 }
-.offCanvasInicio .offCanvasInicio-content .sub-title a:hover {
+.offCanvasInicio .offCanvasInicio-content .sub-title a:hover, .offCanvasInicio .offCanvasInicio-content .recomendaciones a:hover {
   background-color: rgba(255, 255, 255, 0.136);
+  box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.1) inset;
+}
+.offCanvasInicio .status-footer {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.offCanvasInicio .status-footer__user {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 2px;
+}
+.offCanvasInicio .status-footer__user:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.1) inset;
+}
+.offCanvasInicio .status-footer__user, .offCanvasInicio .status-footer .off {
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.offCanvasInicio .status-footer .off {
+  padding: 10px;
+}
+.offCanvasInicio .status-footer .off:hover {
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.1) inset;
 }
 
