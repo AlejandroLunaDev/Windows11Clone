@@ -5,6 +5,7 @@ class Icono {
   }
 }
 
+
 const iconoGitHub = new Icono(
   "GitHub",
   "./src/assets/svgs/inicio/github.svg"
@@ -71,6 +72,8 @@ const iconosInicio = () => {
     iconsContainer.appendChild(nuevoA);
   });
 };
+
+
 
 
 
