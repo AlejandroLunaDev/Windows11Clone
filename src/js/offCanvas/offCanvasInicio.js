@@ -8,7 +8,7 @@ class Icono {
 
 const iconoGitHub = new Icono(
   "GitHub",
-  "../../assets/svgs/inicio/github.svg"
+  "./src/assets/svgs/inicio/github.svg"
 );
 const iconoFigma = new Icono(
   "Figma",
