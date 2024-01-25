@@ -54,10 +54,35 @@ const iconoEdge = new Icono(
   "Edge",
   "./src/assets/svgs/inicio/edge.svg"
 );
+const iconoMstore = new Icono(
+  "Microsoft Store",
+  "./src/assets/img/mstoreicon.png"
+);
+const iconoIntelliJ = new Icono(
+  "IntellieJ",
+  "./src/assets/svgs/inicio/intelliej.svg"
+);
+const iconoPostman = new Icono(
+  "Postman",
+  "./src/assets/svgs/inicio/postman.svg"
+);
+const iconoSkype = new Icono(
+  "Skype",
+  "./src/assets/svgs/inicio/skype.svg"
+);
+const iconoSpotify = new Icono(
+  "IntellieJ",
+  "./src/assets/svgs/inicio/spotify.svg"
+);
+const iconoZoom = new Icono(
+  "IntellieJ",
+  "./src/assets/svgs/inicio/zoom.svg"
+);
+
 
 
 const iconosInicio = () => {
-  const arrayIconos = [iconoGitHub, iconoFigma,iconoChome,iconoExel,iconoWord,iconoGitBash,iconoVSCode,iconolinkedIn,iconoDiscord,iconoSteam,iconoWhatsAap, iconoEdge];
+  const arrayIconos = [iconoGitHub, iconoFigma,iconoChome,iconoExel,iconoWord,iconoGitBash,iconoVSCode,iconolinkedIn,iconoDiscord,iconoSteam,iconoWhatsAap, iconoEdge,iconoMstore,iconoIntelliJ,iconoPostman,iconoSkype,iconoSpotify,iconoZoom];
   const iconsContainer = document.getElementById("icons");
 
   arrayIconos.forEach((icono) => {
