@@ -14,6 +14,6 @@ const terminal = () => {
     };
 
     bashIcon.addEventListener('click', handleClick);
-};
+}
 
 export { terminal };
