@@ -1,0 +1,59 @@
+.draggable-window {
+    bottom: 15%;
+    left: 30%;
+    width: 800px;
+    height: 450px;
+    background-color: darken($color: #22222281, $amount: 4);
+    border: 1px solid #3d3c3cad;
+    backdrop-filter: blur(20.5px);
+    border-radius: 5px;
+    position: absolute;
+    transition: left 0.2s, top 0.2s;
+    display: block;
+    backdrop-filter: blur(20.5px);
+
+    & .window-header {
+      @include flex($jc:space-between);
+      height: 40px;
+      background-color: rgba(34, 34, 34, 0.276);
+     
+
+      & .max-mix-close{
+        @include flex;
+          & .closebtn {
+            border-radius: 0px 5px 0px 0px;
+            &:hover {
+              background-color: red;
+            }
+          }
+
+        & div {
+          padding: 9px;
+          
+       
+            & img {
+              height: 18px;
+            }
+             &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.1) inset;
+          }
+        }
+      }
+    }
+
+    & .window-container {
+      background-color: #111;
+      height: 100%;
+      border-radius: 0 0 5px 5px;
+      & iframe {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+
+  .fade-out {
+    animation: fadeOut 0.3s ease-out;
+}

@@ -6,7 +6,7 @@ const initializeOffCanvas = () => {
         const offCanvasInicioContainer = document.getElementById('offCanvasInicio');
 
         toggleOffCanvasButton.addEventListener('click', () => {
-            offCanvasContainer.style.bottom = (offCanvasContainer.style.bottom === '0px') ? '-600px' : '0';
+            offCanvasContainer.style.bottom = (offCanvasContainer.style.bottom === '0px') ? '-800px' : '0';
         });
 
 

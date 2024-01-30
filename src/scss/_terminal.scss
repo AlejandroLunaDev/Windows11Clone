@@ -1,0 +1,14 @@
+textarea {
+    resize: none;
+    border: none;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: monospace;
+    white-space: pre-wrap;
+    &:focus {
+        outline: none;
+    }
+}

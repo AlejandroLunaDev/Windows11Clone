@@ -75,7 +75,7 @@ const iconoSpotify = new Icono(
   "./src/assets/svgs/inicio/spotify.svg"
 );
 const iconoZoom = new Icono(
-  "IntellieJ",
+  "Zoom",
   "./src/assets/svgs/inicio/zoom.svg"
 );
 
