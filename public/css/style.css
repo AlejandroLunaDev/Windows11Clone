@@ -39,9 +39,27 @@
   transition: filter 0.3s ease;
 }
 .index-body .icon-container {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 80vh;
   position: absolute;
   top: 20px;
   left: 20px;
+  gap: 15px;
+}
+.index-body .icon-container a {
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.index-body .icon-container a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 2px 1px rgba(255, 255, 255, 0.1) inset;
+  border-radius: 5px;
 }
 .index-body .icon-container .icons {
   height: 80px;

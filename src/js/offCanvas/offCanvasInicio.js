@@ -95,7 +95,28 @@ const iconosInicio = () => {
     nuevoA.appendChild(nuevaImagen);
     nuevoA.appendChild(nuevoP);
     iconsContainer.appendChild(nuevoA);
+
   });
+
+
+// renderizar iconos en el desktop
+
+  const desktop = document.getElementById('icon-cantainer');
+
+
+  if (iconoGitBash){
+      const nuevoA = document.createElement("a");
+      const nuevaImagen = document.createElement("img");
+      const nuevoP = document.createElement("p");
+      nuevaImagen.src = iconoGitBash.ruta;
+      nuevoP.textContent = iconoGitBash.nombre;
+    
+      nuevoA.appendChild(nuevaImagen);
+      nuevoA.appendChild(nuevoP);
+      desktop.appendChild(nuevoA)
+  }
+
+
 };
 
 
