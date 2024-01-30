@@ -22,7 +22,7 @@ function minMaxWindows () {
         windows.style.height = '450px';
         windows.style.left = '30%';
         windows.style.top = '15%';
-        maxImg.src = '/src/assets/svgs/window/maximize.svg';
+        maxImg.src = './src/assets/svgs/window/maximize.svg';
         max.removeEventListener('click', minimize);
         max.addEventListener('click', maximize);
     };

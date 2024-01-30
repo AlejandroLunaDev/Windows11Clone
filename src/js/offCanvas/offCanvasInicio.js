@@ -15,7 +15,7 @@ const iconoFigma = new Icono(
   "./src/assets/svgs/inicio/figma.svg"
 );
 const iconoGitBash = new Icono(
-  "Terminal",
+  "Git Bash",
   "./src/assets/svgs/inicio/gitbash.svg"
 );
 const iconoChome = new Icono(

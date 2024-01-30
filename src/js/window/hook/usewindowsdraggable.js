@@ -1,6 +1,7 @@
     const draggable = () => {
     const window = document.getElementById("draggable-window");
     const windowHeader = document.getElementById("window-header");
+    const windowTrash = document.getElementById("window-header-trash");
 
     let offsetX, offsetY;
 
@@ -8,7 +9,9 @@
         e.preventDefault();
         offsetX = e.clientX - window.getBoundingClientRect().left;
         offsetY = e.clientY - window.getBoundingClientRect().top;
+   
         window.style.zIndex = 1000;
+    
 
         document.addEventListener("mousemove", onMouseMove);
         document.addEventListener("mouseup", onMouseUp);

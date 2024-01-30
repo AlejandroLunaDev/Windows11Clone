@@ -217,14 +217,14 @@
       <!-- desktop -->
       <div class="icon-container" id="icon-cantainer">
         <a href="#">
-          <img class="icons" src="./src/assets/img/trash.png" alt="basura">
+          <img class="icons" id="papelera" src="./src/assets/img/trash.png" alt="basura">
           <p>Papelera de <br> reciclaje</p>
         </a>
       </div>
       
       <!-- Windows -->
 
-      <section id="draggable-window" class="draggable-window" draggable="true"  >
+      <section id="draggable-window" class="draggable-window"   >
         <div  class="window-header" id="window-header">
           <div class="logo"></div>
           <div class="max-mix-close">
@@ -241,6 +241,28 @@
         </div>
         <div class="window-container">
           <iframe src="./src/pages/terminal.html" frameborder="0"></iframe>
+        </div>
+      </section>
+
+      <!-- windows trash -->
+
+      <section id="draggable-window-trash" class="draggable-window"   >
+        <div  class="window-header" id="window-header">
+          <div class="logo"></div>
+          <div class="max-mix-close">
+            <div id="minimize">
+              <img src="./src/assets/svgs/window/minimize.svg" alt="minimize">
+            </div>
+            <div id="maximize">
+              <img id="max-img" src="./src/assets/svgs/window/maximize.svg" alt="maximize">
+            </div>
+            <div class="closebtn" id="close">
+              <img src="./src/assets/svgs/window/close.svg" alt="close">
+            </div>
+          </div>
+        </div>
+        <div class="window-container">
+          <img src="./src/assets/svgs/window/bootstrap.svg" alt="bootstrap">
         </div>
       </section>
 
