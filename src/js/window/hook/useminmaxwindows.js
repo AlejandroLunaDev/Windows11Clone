@@ -11,7 +11,7 @@ function minMaxWindows () {
         windows.style.height = '100%';
         windows.style.left = '0';
         windows.style.top = '0';
-        maxImg.src = '/src/assets/svgs/window/minimizemax.svg';
+        maxImg.src = './src/assets/svgs/window/minimizemax.svg';
         max.removeEventListener('click', maximize);
         max.addEventListener('click', minimize);
     };

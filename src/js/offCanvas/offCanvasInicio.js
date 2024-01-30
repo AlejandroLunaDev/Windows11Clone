@@ -109,7 +109,8 @@ const iconosInicio = () => {
       const nuevaImagen = document.createElement("img");
       const nuevoP = document.createElement("p");
       nuevaImagen.src = iconoGitBash.ruta;
-      nuevoP.textContent = iconoGitBash.nombre;
+      nuevoA.classList.add('bash')
+      nuevoP.textContent = 'Git Bash';
     
       nuevoA.appendChild(nuevaImagen);
       nuevoA.appendChild(nuevoP);

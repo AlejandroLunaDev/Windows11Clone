@@ -4,6 +4,7 @@ import { iconosInicio } from "./offCanvas/offCanvasInicio.js";
 import { offCanvasStatus } from "./offCanvas/offCanvasStatus.js";
 import { minMaxWindows } from "./window/hook/useminmaxwindows.js";
 import { draggable } from "./window/hook/usewindowsdraggable.js";
+import { terminal } from "./window/terminal.js";
 
 
 
@@ -14,5 +15,6 @@ updateClock();
 iconosInicio();
 draggable();
 minMaxWindows();
+terminal()
 
 

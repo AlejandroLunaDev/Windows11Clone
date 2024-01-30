@@ -242,6 +242,21 @@ header .nav__system-icons:hover {
   flex-wrap: wrap;
 }
 
+textarea {
+  resize: none;
+  border: none;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+textarea:focus {
+  outline: none;
+}
+
 .offCanvasStatus {
   right: 0;
   width: 360px;
@@ -477,7 +492,7 @@ header .nav__system-icons:hover {
   border-radius: 5px;
   position: absolute;
   transition: left 0.2s, top 0.2s;
-  display: block;
+  display: none;
   backdrop-filter: blur(20.5px);
 }
 .draggable-window .window-header {
@@ -522,21 +537,6 @@ header .nav__system-icons:hover {
 
 .fade-out {
   animation: fadeOut 0.3s ease-out;
-}
-
-textarea {
-  resize: none;
-  border: none;
-  background-color: #000;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  font-family: monospace;
-  white-space: pre-wrap;
-}
-textarea:focus {
-  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

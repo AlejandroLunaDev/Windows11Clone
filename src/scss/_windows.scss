@@ -9,7 +9,7 @@
     border-radius: 5px;
     position: absolute;
     transition: left 0.2s, top 0.2s;
-    display: block;
+    display: none;
     backdrop-filter: blur(20.5px);
 
     & .window-header {
