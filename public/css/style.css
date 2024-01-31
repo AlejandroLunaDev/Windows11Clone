@@ -93,6 +93,24 @@
   z-index: -1;
 }
 
+@media (max-width: 880px) {
+  html {
+    background-image: url("https://supportkb.dell.com/img/ka06P000000spFFQAY/ka06P000000spFFQAY_es_MX_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 99999;
+    pointer-events: none;
+  }
+  .bg {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  main {
+    display: none;
+  }
+}
 .tooltip-box {
   background-color: rgba(0, 0, 0, 0.2);
   line-height: 20px;
