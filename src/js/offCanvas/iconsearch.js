@@ -38,7 +38,6 @@ const iconsearch = () => {
             suggestionsDiv.appendChild(suggestion);
         });
 
-
     };
 
     const removeKeyword = (keywordToRemove) => {

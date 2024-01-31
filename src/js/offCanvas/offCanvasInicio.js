@@ -101,9 +101,9 @@ const iconosInicio = () => {
 
 // renderizar iconos en el desktop
 
-  const desktop = document.getElementById('icon-cantainer');
-
-
+ /*  const desktop = document.getElementById('icon-cantainer');
+ */
+/* 
   if (iconoGitBash){
       const nuevoA = document.createElement("a");
       const nuevaImagen = document.createElement("img");
@@ -115,7 +115,7 @@ const iconosInicio = () => {
       nuevoA.appendChild(nuevaImagen);
       nuevoA.appendChild(nuevoP);
       desktop.appendChild(nuevoA)
-  }
+  } */
 
 
 };

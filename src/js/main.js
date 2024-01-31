@@ -6,7 +6,7 @@ import { offCanvasStatus } from "./offCanvas/offCanvasStatus.js";
 import { papelera } from "./window/Papelera.js";
 import { minMaxWindows } from "./window/hook/useminmaxwindows.js";
 import { draggable } from "./window/hook/usewindowsdraggable.js";
-import { terminal } from "./window/terminal.js";
+
 
 
 
@@ -17,7 +17,6 @@ updateClock();
 iconosInicio();
 draggable();
 minMaxWindows();
-terminal();
 papelera();
 iconsearch();
 
