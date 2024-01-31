@@ -1,8 +1,8 @@
 .draggable-window {
     bottom: 15%;
     left: 30%;
-    width: 800px;
-    height: 450px;
+    width: 700px;
+    height: 350px;
     background-color: darken($color: #22222281, $amount: 4);
     border: 1px solid #3d3c3cad;
     backdrop-filter: blur(20.5px);
@@ -44,7 +44,7 @@
 
     & .window-container {
       @include flex;
-      background-color: #111;
+      background-color: #222;
       height: 100%;
       border-radius: 0 0 5px 5px;
       & iframe {

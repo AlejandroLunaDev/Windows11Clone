@@ -526,8 +526,8 @@ textarea:focus {
 .draggable-window {
   bottom: 15%;
   left: 30%;
-  width: 800px;
-  height: 450px;
+  width: 700px;
+  height: 350px;
   background-color: rgba(24, 24, 24, 0.5058823529);
   border: 1px solid rgba(61, 60, 60, 0.6784313725);
   backdrop-filter: blur(20.5px);
@@ -572,7 +572,7 @@ textarea:focus {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #111;
+  background-color: #222;
   height: 100%;
   border-radius: 0 0 5px 5px;
 }
