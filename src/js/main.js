@@ -1,5 +1,6 @@
 import { updateClock } from "../js/clock.js";
 import { initializeOffCanvas } from './offCanvas/hook/useOffcanvas.js';
+import { iconsearch } from "./offCanvas/iconsearch.js";
 import { iconosInicio } from "./offCanvas/offCanvasInicio.js";
 import { offCanvasStatus } from "./offCanvas/offCanvasStatus.js";
 import { papelera } from "./window/Papelera.js";
@@ -16,6 +17,7 @@ updateClock();
 iconosInicio();
 draggable();
 minMaxWindows();
-terminal()
-papelera()
+terminal();
+papelera();
+iconsearch();
 
