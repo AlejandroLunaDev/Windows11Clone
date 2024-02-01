@@ -1,7 +1,7 @@
     const draggable = () => {
     const window = document.getElementById("draggable-window");
     const windowHeader = document.getElementById("window-header");
-    const windowTrash = document.getElementById("window-header-trash");
+
 
     let offsetX, offsetY;
 
@@ -40,3 +40,6 @@
     };
 
     export { draggable };
+
+
+    

@@ -1,31 +1,32 @@
 # Windows 11 Clone
-El enlace a la pagina esta en la parte de About
+
+**Visita:** https://alejandrolunadev.github.io/Windows11Clone/#
+**Explora:** Cada parte,encuentra los detalles y diviertete .
+
+El Proyecto no es responsivo por el momento.
+(Proyecto desarrollado para el curso de Javascript en CoderHouse)
 
 ## Tecnologías Utilizadas
 
  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" height="50"/>&nbsp;&nbsp;    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" height="50"/>&nbsp;&nbsp;   <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="Sass" height="50"/>&nbsp;&nbsp; <img src="https://i0.wp.com/www.duomimikry.de/wp-content/uploads/2016/03/js-logo.png?fit=500%2C500&ssl=1" alt="Javascript" height="50"/>&nbsp;
 
 ## Para la escucha de Sass 
-`sass:all: npm run sass:all`
+`npm run sass:all`
 
-# Para el tutor
+## Contribuir
 
-## Objeto Date()
+¡Contribuciones son bienvenidas! Si deseas mejorar Windows 11 Clone:
 
-<p align="center">
-  <img src="./src/assets/img/readme/imagenclock.png" alt="imagen clock">
-</p>
+1. Haz un fork del proyecto
+2. Crea una rama para tu mejora `git checkout -b feature/mejora`
+3. Haz commit de tus cambios `git commit -am 'Agrega una mejora'`
+4. Empuja la rama a tu repositorio `git push origin feature/mejora`
+5. Abre un Pull Request
 
-Utilización del objeto Date con sus métodos para obtener el dia hora y año.
+## Problemas y Sugerencias
 
-## Método forEach()
+Si encuentras algún problema o tienes sugerencias para mejorar el proyecto, por favor [abre un issue](https://github.com/AlejandroLunaDev/Windows11Clone/issues).
 
-<p align="center">
-  <img src="./src/assets/img/readme/imagenoffcanvasinicio.png" alt="imagen inicio">
-</p>
+## Autor
 
-Utilizacion del método foreach para recorrer cada elemento del array compueto por objetos.
-
-### Conclución
-
-De esta forma estaria cumpliendose lo pedido para la segunda pre-entrega.
+Alejandro Luna https://github.com/AlejandroLunaDev/AlejandroLunaDev

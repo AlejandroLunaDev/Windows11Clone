@@ -18,8 +18,8 @@ function minMaxWindows () {
 
 
     const minimize = () => {
-        windows.style.width = '800px';
-        windows.style.height = '450px';
+        windows.style.width = '700px';
+        windows.style.height = '350px';
         windows.style.left = '30%';
         windows.style.top = '15%';
         maxImg.src = './src/assets/svgs/window/maximize.svg';
