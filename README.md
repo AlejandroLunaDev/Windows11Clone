@@ -1,7 +1,7 @@
 # Windows 11 Clone
 
-**Visita:** https://alejandrolunadev.github.io/Windows11Clone/#
-**Explora:** Cada parte,encuentra los detalles y diviertete .
+1. **Visita:** https://alejandrolunadev.github.io/Windows11Clone/#
+2. **Explora:** Cada parte,encuentra los detalles y diviertete .
 
 El Proyecto no es responsivo por el momento.
 (Proyecto desarrollado para el curso de Javascript en CoderHouse)
