@@ -63,6 +63,9 @@ const iconsearch = () => {
             const query = inputsearch.value.toLowerCase();
             saveKeyword(query);
         }
+        
+
+
     });
 
     inputsearch.addEventListener('focus', showSuggestions);
@@ -77,6 +80,8 @@ const iconsearch = () => {
 };
 
 export { iconsearch };
+
+
 
 
 

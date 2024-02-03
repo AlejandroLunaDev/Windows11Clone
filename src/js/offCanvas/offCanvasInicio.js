@@ -5,125 +5,59 @@ class Icono {
   }
 }
 
-
-const iconoGitHub = new Icono(
-  "GitHub",
-  "./src/assets/svgs/inicio/github.svg"
-);
-const iconoFigma = new Icono(
-  "Figma",
-  "./src/assets/svgs/inicio/figma.svg"
-);
-const iconoGitBash = new Icono(
-  "Git Bash",
-  "./src/assets/svgs/inicio/gitbash.svg"
-);
-const iconoChome = new Icono(
-  "Chrome",
-  "./src/assets/svgs/inicio/chrome.svg"
-);
-const iconoExel = new Icono(
-  "Exel",
-  "./src/assets/svgs/inicio/exel.svg"
-);
-const iconoWord = new Icono(
-  "Word",
-  "./src/assets/svgs/inicio/word.svg"
-);
-const iconoVSCode = new Icono(
-  "VSCode",
-  "./src/assets/svgs/inicio/vscode.svg"
-);
-const iconoDiscord = new Icono(
-  "Discord",
-  "./src/assets/svgs/inicio/discord.svg"
-);
-const iconolinkedIn = new Icono(
-  "LinkedIn",
-  "./src/assets/svgs/inicio/linkedin.svg"
-);
-const iconoSteam = new Icono(
-  "Steam",
-  "./src/assets/svgs/inicio/steam.svg"
-);
-const iconoWhatsAap = new Icono(
-  "WhatsApp",
-  "./src/assets/svgs/inicio/whatsaap.svg"
-);
-const iconoEdge = new Icono(
-  "Edge",
-  "./src/assets/svgs/inicio/edge.svg"
-);
-const iconoMstore = new Icono(
-  "Microsoft Store",
-  "./src/assets/img/mstoreicon.png"
-);
-const iconoIntelliJ = new Icono(
-  "IntellieJ",
-  "./src/assets/svgs/inicio/intelliej.svg"
-);
-const iconoPostman = new Icono(
-  "Postman",
-  "./src/assets/svgs/inicio/postman.svg"
-);
-const iconoSkype = new Icono(
-  "Skype",
-  "./src/assets/svgs/inicio/skype.svg"
-);
-const iconoSpotify = new Icono(
-  "IntellieJ",
-  "./src/assets/svgs/inicio/spotify.svg"
-);
-const iconoZoom = new Icono(
-  "Zoom",
-  "./src/assets/svgs/inicio/zoom.svg"
-);
-
-
+const iconosData = [
+  { nombre: "GitHub", ruta: "./src/assets/svgs/inicio/github.svg" },
+  { nombre: "Figma", ruta: "./src/assets/svgs/inicio/figma.svg" },
+  { nombre: "Chrome", ruta: "./src/assets/svgs/inicio/chrome.svg" },
+  { nombre: "Git Bash", ruta: "./src/assets/svgs/inicio/gitbash.svg" },
+  { nombre: "Exel", ruta: "./src/assets/svgs/inicio/exel.svg" },
+  { nombre: "Word", ruta: "./src/assets/svgs/inicio/word.svg" },
+  { nombre: "VsCode", ruta: "./src/assets/svgs/inicio/vscode.svg" },
+  { nombre: "Discord", ruta: "./src/assets/svgs/inicio/discord.svg" },
+  { nombre: "LinkedIn", ruta: "./src/assets/svgs/inicio/linkedin.svg" },
+  { nombre: "Steam", ruta: "./src/assets/svgs/inicio/steam.svg" },
+  { nombre: "WhatsApp", ruta: "./src/assets/svgs/inicio/whatsaap.svg" },
+  { nombre: "Edge", ruta: "./src/assets/svgs/inicio/edge.svg" },
+  { nombre: "IntellieJ", ruta: "./src/assets/svgs/inicio/intelliej.svg" },
+  { nombre: "Postman", ruta: "./src/assets/svgs/inicio/postman.svg" },
+  { nombre: "Skype", ruta: "./src/assets/svgs/inicio/skype.svg" },
+  { nombre: "Zoom", ruta: "./src/assets/svgs/inicio/zoom.svg" },
+  { nombre: "Microsoft Store", ruta: "./src/assets/img/mstoreicon.png" },
+  { nombre: "Spotify", ruta: "./src/assets/svgs/inicio/spotify.svg" },
+];
 
 const iconosInicio = () => {
-  const arrayIconos = [iconoGitHub, iconoFigma,iconoChome,iconoExel,iconoWord,iconoGitBash,iconoVSCode,iconolinkedIn,iconoDiscord,iconoSteam,iconoWhatsAap, iconoEdge,iconoMstore,iconoIntelliJ,iconoPostman,iconoSkype,iconoSpotify,iconoZoom];
   const iconsContainer = document.getElementById("icons");
+  const input = document.getElementById('inputSearch');
 
-  arrayIconos.forEach((icono) => {
-    const nuevoA = document.createElement("a");
-    const nuevaImagen = document.createElement("img");
-    const nuevoP = document.createElement("p");
-    nuevaImagen.src = icono.ruta;
-    nuevoP.textContent = icono.nombre;
+  const renderizarIconos = (filtro = '') => {
+    iconsContainer.innerHTML = ''; 
 
-    nuevoA.appendChild(nuevaImagen);
-    nuevoA.appendChild(nuevoP);
-    iconsContainer.appendChild(nuevoA);
+    iconosData.forEach((icono) => {
+      if (icono.nombre.toLowerCase().includes(filtro)) {
+        const nuevoA = document.createElement("a");
+        const nuevaImagen = document.createElement("img");
+        const nuevoP = document.createElement("p");
+        nuevaImagen.src = icono.ruta;
+        nuevoP.textContent = icono.nombre;
 
+        nuevoA.appendChild(nuevaImagen);
+        nuevoA.appendChild(nuevoP);
+        iconsContainer.appendChild(nuevoA);
+      }
+    });
+  };
+
+  
+  renderizarIconos();
+
+  
+  input.addEventListener('input', () => {
+    const inputValue = input.value.trim().toLowerCase();
+    renderizarIconos(inputValue);
   });
-
-
-// renderizar iconos en el desktop
-
- /*  const desktop = document.getElementById('icon-cantainer');
- */
-/* 
-  if (iconoGitBash){
-      const nuevoA = document.createElement("a");
-      const nuevaImagen = document.createElement("img");
-      const nuevoP = document.createElement("p");
-      nuevaImagen.src = iconoGitBash.ruta;
-      nuevoA.classList.add('bash')
-      nuevoP.textContent = 'Git Bash';
-    
-      nuevoA.appendChild(nuevaImagen);
-      nuevoA.appendChild(nuevoP);
-      desktop.appendChild(nuevoA)
-  } */
-
-
 };
 
-
-
-
-
-export { iconosInicio};
+export { iconosInicio };
 
 
