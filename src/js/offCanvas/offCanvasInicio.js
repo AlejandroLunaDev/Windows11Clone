@@ -1,9 +1,3 @@
-class Icono {
-  constructor(nombre, ruta) {
-    this.nombre = nombre;
-    this.ruta = ruta;
-  }
-}
 
 const iconosData = [
   { nombre: "GitHub", ruta: "./src/assets/svgs/inicio/github.svg" },
