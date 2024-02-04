@@ -17,6 +17,9 @@
   <body class="index-body">
     <header>
       <nav class="nav">
+
+        <!-- Weather Secition -->
+
         <section class="weather" id="weather">
           <img src="https://openweathermap.org/img/wn/01d.png" alt="condiciones del tiempo" id="wheather-icon-nav">
           <div>
@@ -24,6 +27,9 @@
             <p id="description-nav"></p>
           </div>
         </section>
+
+        <!-- Inicio Section -->
+
         <section class="inicio">
           <div class="inicio__icon" id="windowsIcon">
             <img src="./src/assets/svgs/inicio/inicio.svg" alt="inicio" />
@@ -37,6 +43,9 @@
             <p>ESP</p>
             <p>ES</p>
           </section>
+
+          <!-- System Status section -->
+
           <section class="nav__system-status" id="toggleOffCanvas">
             <article class="nav__system-status-wifi">
               <div class="tooltip-box wifi-conection">
@@ -62,14 +71,13 @@
               </div>
             </article>
           </section>
+
+          <!-- Clock -->
+
           <section class="nav__system-date">
             <article class="date">
               <div class="tooltip-box" id="tooltipdate"></div>
-              <div class="date__clock" id="clock">
-                <div id="hour"></div>
-                <div>:</div>
-                <div id="minutes"></div>
-              </div>
+              <div class="date__clock" id="clock"></div>
               <div class="date__fecha" id="fecha" data-my-title=""></div>
             </article>
             <article class="nav__alert">
@@ -322,7 +330,7 @@
 
     </main>
     
-
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
     <script type="module" src="./src/js/main.js"></script>
 
   </body>

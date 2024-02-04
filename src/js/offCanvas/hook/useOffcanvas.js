@@ -1,11 +1,17 @@
 const initializeOffCanvas = () => {
     document.addEventListener('DOMContentLoaded',  () => {
+
+        //VARIABLES Y SELECCION DE ELEMENTOS
+
         const toggleOffCanvasButton = document.getElementById('toggleOffCanvas');
         const offCanvasContainer = document.getElementById('offCanvasStatus');
         const toggleWindowsBtn = document.getElementById('windowsIcon');
         const offCanvasInicioContainer = document.getElementById('offCanvasInicio');
         const offCanvasWeatherContainer= document.getElementById('weather-container');
         const toggleWeatherBtn= document.getElementById('weather');
+
+
+        // EVENTOS
 
         toggleOffCanvasButton.addEventListener('click', () => {
             offCanvasContainer.style.bottom = (offCanvasContainer.style.bottom === '0px') ? '-800px' : '0';

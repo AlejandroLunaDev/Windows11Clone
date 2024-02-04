@@ -4,7 +4,9 @@
 
 
 const tiempo = () => {
+
     // variables y selección de elementos
+
     const apiKeyWeather = 'bbea4906c7e69f7bfe1494f989efe8d9';
     const apiKeyPhoto = 'GEnwI-RTJLRrIRQdmdmxaqWS4mxdL1vHfoJTrzvPAVI';
 
@@ -25,7 +27,9 @@ const tiempo = () => {
     const tempNavElement = document.getElementById('temperature-nav');
     const descNavElement = document.getElementById('description-nav');
 
+
     // funciones
+
     const getWeatherData = async (city) => {
         try {
             const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKeyWeather}&lang=es`;
@@ -87,7 +91,7 @@ const tiempo = () => {
         showWeatherData(city);
     };
 
-
+    // Eventos
 
     cityInput.addEventListener('keyup', (e) => {
         if (e.key === 'Enter') {
