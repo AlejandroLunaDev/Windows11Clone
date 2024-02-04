@@ -13,6 +13,22 @@ El Proyecto no es responsivo por el momento.
 ## Para la escucha de Sass 
 `npm run sass:all`
 
+
+
+### Para el Tutor
+
+
+# LocalStorage
+Utilizacion de localStorage para sugerencias en el input de los iconos en el menu de Inicio
+
+<img src='./src/assets/img/readme/UseLocalStorage.png'>
+
+# Luxon-library
+
+Use Luxon para mostrar la hora, esto hizo mi codigo del clock mucho mas compato.
+
+<img src='./src/assets/img/readme/luxon.png'>
+
 ## Contribuir
 
 ¡Contribuciones son bienvenidas! Si deseas mejorar Windows 11 Clone:
