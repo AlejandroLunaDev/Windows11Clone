@@ -15,19 +15,26 @@ El Proyecto no es responsivo por el momento.
 
 
 
-### Para el Tutor
+# Para CoderHouse
 
 
-# LocalStorage
+### LocalStorage
 Utilizacion de localStorage para sugerencias en el input de los iconos en el menu de Inicio
 
 <img src='./src/assets/img/readme/UseLocalStorage.png'>
 
-# Luxon-library
+### Luxon-library
 
 Use Luxon para mostrar la hora, esto hizo mi codigo del clock mucho mas compato.
 
 <img src='./src/assets/img/readme/luxon.png'>
+
+### Consumo de API utilizando fetch
+
+Hice la tipica app del Clima utilizando 3 API la del clima,una de banderas de paises por cdn y una de fotos.
+<img src='./src/assets/img/readme/weatherAPI.png'>
+<img src='./src/assets/img/readme/photoAPI.png'>
+
 
 ## Contribuir
 
