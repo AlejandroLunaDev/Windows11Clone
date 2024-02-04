@@ -3,6 +3,7 @@ import { initializeOffCanvas } from './offCanvas/hook/useOffcanvas.js';
 import { iconsearch } from "./offCanvas/iconsearch.js";
 import { iconosInicio } from "./offCanvas/offCanvasInicio.js";
 import { offCanvasStatus } from "./offCanvas/offCanvasStatus.js";
+import { tiempo } from "./wheather.js";
 import { papelera } from "./window/Papelera.js";
 import { minMaxWindows } from "./window/hook/useminmaxwindows.js";
 import { draggable } from "./window/hook/usewindowsdraggable.js";
@@ -19,5 +20,5 @@ draggable();
 minMaxWindows();
 papelera();
 iconsearch();
-
+tiempo()
 

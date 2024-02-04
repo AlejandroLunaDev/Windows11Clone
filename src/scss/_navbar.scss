@@ -11,7 +11,7 @@ header {
         backdrop-filter: blur(20.5px);
         border-top: 1px solid grey;
         & .inicio {
-            margin-left: 430px;
+            margin-right: 600px;
             &__icon{
                 @include systemBox;
                 &:hover {

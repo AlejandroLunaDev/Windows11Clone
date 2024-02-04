@@ -1,9 +1,17 @@
+@font-face {
+  font-family: Segoe UI Variable;
+  src: url(https://www.cssfontstack.com/Segoe-UI);
+}
+
+
+
 .index-body {
   @include flex($jc:none,$al:none);
   flex-direction: column;
   min-height: 100vh;
   overflow-y: hidden;
   transition: filter 0.3s ease;
+  font-family: Segoe UI; 
   
  
 
@@ -24,7 +32,7 @@
         background-color: rgba(255, 255, 255, 0.1);
         box-shadow:1px 2px 1px rgba(255, 255, 255, 0.1) inset ;
         border-radius: 5px;
-    }
+      }
     }
     & .icons{
       height: 80px;
