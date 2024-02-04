@@ -4,9 +4,9 @@ import { iconsearch } from "./offCanvas/iconsearch.js";
 import { iconosInicio } from "./offCanvas/offCanvasInicio.js";
 import { offCanvasStatus } from "./offCanvas/offCanvasStatus.js";
 import { tiempo } from "./wheather.js";
-import { papelera } from "./window/Papelera.js";
-import { minMaxWindows } from "./window/hook/useminmaxwindows.js";
-import { draggable } from "./window/hook/usewindowsdraggable.js";
+import { openWindows } from "./window/openWindows.js";
+import { draggable } from "./window/hook/usedraggable.js";
+import { minMaxWindows } from './window/hook/useMaxMinClose.js';
 
 
 
@@ -16,9 +16,25 @@ initializeOffCanvas();
 offCanvasStatus();
 updateClock();
 iconosInicio();
-draggable();
-minMaxWindows();
-papelera();
+/* minMaxWindows(); */
+openWindows();
 iconsearch();
 tiempo()
 
+
+
+
+
+const windows = document.querySelectorAll(".draggable-window");
+
+windows.forEach(window => {
+    draggable(window);
+});
+
+
+
+const windowsBtn = document.querySelectorAll('.draggable-window');
+
+windowsBtn.forEach(window => {
+    minMaxWindows(window);
+});
