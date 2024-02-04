@@ -32,7 +32,9 @@ Use Luxon para mostrar la hora, esto hizo mi codigo del clock mucho mas compato.
 ### Consumo de API utilizando fetch
 
 Hice la tipica app del Clima utilizando 3 API la del clima,una de banderas de paises por cdn y una de fotos.
+
 <img src='./src/assets/img/readme/weatherAPI.png'>
+
 <img src='./src/assets/img/readme/photoAPI.png'>
 
 
