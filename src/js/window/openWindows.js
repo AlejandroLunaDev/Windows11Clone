@@ -31,6 +31,23 @@ const openWindows = ()=>{
     
         roadIcon.addEventListener('click', handleClick);
     }
+
+
+    const chrome = ()=>{
+        const chromeIcon = document.getElementById('Chrome');
+        const windows = document.getElementById('draggable-window-chrome');
+    
+        const toggleDisplay = () => {
+            windows.style.display = (windows.style.display === 'none') ? 'block' : 'none';
+        };
+    
+        const handleClick = () => {
+            toggleDisplay();
+        };
+    
+        chromeIcon.addEventListener('click', handleClick);
+    }
+    chrome()
     papelera()
     roadmap()
 }
