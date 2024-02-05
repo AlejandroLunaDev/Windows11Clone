@@ -35,6 +35,7 @@ const openWindows = ()=>{
 
     const chrome = ()=>{
         const chromeIcon = document.getElementById('Chrome');
+        const crhomeIconInicio = document.querySelector('.open-windows-chrome')
         const windows = document.getElementById('draggable-window-chrome');
     
         const toggleDisplay = () => {
@@ -46,6 +47,7 @@ const openWindows = ()=>{
         };
     
         chromeIcon.addEventListener('click', handleClick);
+        crhomeIconInicio.addEventListener('click', handleClick);
     }
     chrome()
     papelera()

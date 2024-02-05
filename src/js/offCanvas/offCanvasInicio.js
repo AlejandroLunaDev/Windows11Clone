@@ -38,6 +38,9 @@ const iconosInicio = () => {
         nuevoA.appendChild(nuevaImagen);
         nuevoA.appendChild(nuevoP);
         iconsContainer.appendChild(nuevoA);
+        
+        icono.nombre === 'Chrome' ? nuevoA.classList.add('open-windows-chrome') : '';
+
       }
     });
   };
@@ -50,6 +53,11 @@ const iconosInicio = () => {
     const inputValue = input.value.trim().toLowerCase();
     renderizarIconos(inputValue);
   });
+
+
+
+
+
 };
 
 export { iconosInicio };
