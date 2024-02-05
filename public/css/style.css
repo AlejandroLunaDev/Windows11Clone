@@ -435,6 +435,10 @@ textarea:focus {
   flex-wrap: wrap;
   grid-template-columns: repeat(6, 1fr);
 }
+.offCanvasInicio .offCanvasInicio-content .icons a {
+  text-decoration: none;
+  color: #fff;
+}
 .offCanvasInicio .offCanvasInicio-content .icons > * {
   display: flex;
   justify-content: center;

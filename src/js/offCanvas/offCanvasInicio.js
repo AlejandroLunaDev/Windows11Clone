@@ -39,7 +39,14 @@ const iconosInicio = () => {
         nuevoA.appendChild(nuevoP);
         iconsContainer.appendChild(nuevoA);
         
-        icono.nombre === 'Chrome' ? nuevoA.classList.add('open-windows-chrome') : '';
+        icono.nombre === 'Chrome' ? nuevoA.classList.add('open-windows-chrome') : ''; 
+
+        icono.nombre === 'LinkedIn' ? 
+        nuevoA.href = 'https://www.linkedin.com/in/alejandro-luna-dev/'  :'';
+
+        icono.nombre === 'LinkedIn' ? 
+        nuevoA.setAttribute('target', '_blank') :'';
+
 
       }
     });

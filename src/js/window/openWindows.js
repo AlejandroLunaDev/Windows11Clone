@@ -49,6 +49,7 @@ const openWindows = ()=>{
         chromeIcon.addEventListener('click', handleClick);
         crhomeIconInicio.addEventListener('click', handleClick);
     }
+
     chrome()
     papelera()
     roadmap()
