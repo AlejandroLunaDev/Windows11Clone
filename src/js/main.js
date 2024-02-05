@@ -16,7 +16,6 @@ initializeOffCanvas();
 offCanvasStatus();
 updateClock();
 iconosInicio();
-/* minMaxWindows(); */
 openWindows();
 iconsearch();
 tiempo()

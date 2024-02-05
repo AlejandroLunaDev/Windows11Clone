@@ -68,7 +68,10 @@
   border-radius: 5px;
 }
 .index-body .icon-container .icons {
-  height: 50px;
+  height: 40px;
+}
+.index-body .icon-container p {
+  font-size: 12px;
 }
 .index-body .bg {
   width: 100%;
@@ -100,7 +103,7 @@
 }
 
 @media (max-width: 880px) {
-  html {
+  .index-body {
     background-image: url("https://supportkb.dell.com/img/ka06P000000spFFQAY/ka06P000000spFFQAY_es_MX_1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -688,6 +691,24 @@ textarea:focus {
   gap: 15px;
   padding: 15px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body {
+  background-color: #fff;
+}
+body .header-roadmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+body .header-roadmap img {
+  height: 100px;
+  width: 50%;
+}
+body .header-roadmap h1 {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */
