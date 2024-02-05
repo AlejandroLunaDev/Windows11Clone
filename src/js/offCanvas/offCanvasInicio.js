@@ -20,12 +20,16 @@ const iconosData = [
   { nombre: "Spotify", ruta: "./src/assets/svgs/inicio/spotify.svg" },
 ];
 
+
+
 const iconosInicio = () => {
   const iconsContainer = document.getElementById("icons");
   const input = document.getElementById('inputSearch');
 
   const renderizarIconos = (filtro = '') => {
     iconsContainer.innerHTML = ''; 
+
+
 
     iconosData.forEach((icono) => {
       if (icono.nombre.toLowerCase().includes(filtro)) {
@@ -39,12 +43,21 @@ const iconosInicio = () => {
         nuevoA.appendChild(nuevoP);
         iconsContainer.appendChild(nuevoA);
         
+
+           /* USO DE ICONOS */
+
         icono.nombre === 'Chrome' ? nuevoA.classList.add('open-windows-chrome') : ''; 
 
         icono.nombre === 'LinkedIn' ? 
         nuevoA.href = 'https://www.linkedin.com/in/alejandro-luna-dev/'  :'';
 
         icono.nombre === 'LinkedIn' ? 
+        nuevoA.setAttribute('target', '_blank') :'';
+
+        icono.nombre === 'GitHub' ? 
+        nuevoA.href = 'https://github.com/AlejandroLunaDev/Windows11Clone'  :'';
+
+        icono.nombre === 'GitHub' ? 
         nuevoA.setAttribute('target', '_blank') :'';
 
 
