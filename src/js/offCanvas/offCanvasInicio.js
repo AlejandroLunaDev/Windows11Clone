@@ -43,6 +43,7 @@ const iconosInicio = () => {
         nuevoA.appendChild(nuevoP);
         iconsContainer.appendChild(nuevoA);
         
+        
 
            /* USO DE ICONOS */
 
